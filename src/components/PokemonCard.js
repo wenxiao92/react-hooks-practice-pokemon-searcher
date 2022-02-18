@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Card } from "semantic-ui-react";
 
 function PokemonCard({pokemons}) {
-  const {id, name, hp, sprites} = pokemons
+  const {name, hp, sprites} = pokemons
   const [flipImg, setImg] = useState(true)
 
   function handleImgFlip(){
