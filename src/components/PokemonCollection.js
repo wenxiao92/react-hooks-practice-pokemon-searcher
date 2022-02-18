@@ -1,6 +1,6 @@
 import React from "react";
 import PokemonCard from "./PokemonCard";
-import { Card } from "semantic-ui-react";
+import { Card} from "semantic-ui-react";
 
 function PokemonCollection({pokemonCurrent}) {
 
@@ -8,14 +8,12 @@ function PokemonCollection({pokemonCurrent}) {
     <PokemonCard 
     key={pokemon.id}
     pokemons = {pokemon}
-
-
     />
   ))
 
   return (
     <Card.Group itemsPerRow={6}>
-      <h1>{pokemonDisplay}</h1>
+      {pokemonDisplay}
     </Card.Group>
   );
 }
